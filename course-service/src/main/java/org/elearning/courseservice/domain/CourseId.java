@@ -1,4 +1,9 @@
 package org.elearning.courseservice.domain;
 
-public record CourseId() {
+import java.util.UUID;
+
+public record CourseId(UUID id) {
+    public static CourseId  generate() {
+        return new CourseId(UUID.randomUUID());
+    }
 }

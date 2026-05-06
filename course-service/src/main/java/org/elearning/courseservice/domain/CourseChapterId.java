@@ -1,6 +1,9 @@
-package org.elearning.courseservice.domain.valueobjects;
+package org.elearning.courseservice.domain;
 
 import java.util.UUID;
 
-public record CourseChapterId(UUID id) {
+record CourseChapterId(UUID id) {
+    public static CourseChapterId  generate() {
+        return new CourseChapterId(UUID.randomUUID());
+    }
 }

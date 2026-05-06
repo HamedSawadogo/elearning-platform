@@ -1,4 +1,4 @@
-package org.elearning.courseservice.domain.valueobjects;
+package org.elearning.courseservice.domain;
 
 public record Video(String url,
                     String path,

@@ -1,6 +1,6 @@
-package org.elearning.courseservice.domain.valueobjects;
+package org.elearning.courseservice.domain;
 
-public record CourseResource(String url,
+record CourseResource(String url,
                              String path,
                              byte[] content) {
 }
