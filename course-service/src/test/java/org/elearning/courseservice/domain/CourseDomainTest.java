@@ -31,7 +31,7 @@ class CourseDomainTest {
         assertThat(course.getCourseId()).isNotNull();
         assertThat(course.getCourseDuration()).isEqualTo(2);
         assertThat(course.getDescription()).isEqualTo("Devenez un expert en java Spring boot");
-        assertThat(course.getTile()).isEqualTo("Apprendre Spring boot");
+        assertThat(course.getTitle()).isEqualTo("Apprendre Spring boot");
     }
 
     @Test
